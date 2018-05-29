@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Economia2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Economia2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

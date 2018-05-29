@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="economia2.FXMLDocumentController">
+   <children>
+      <ComboBox fx:id="pesoCB" layoutX="436.0" layoutY="59.0" prefWidth="150.0" stylesheets="@FlatBee.css">
+       <items>
+        <FXCollections fx:factory="observableArrayList">
+            <String fx:value="molto_pesante" />
+            <String fx:value="pesante" />
+            <String fx:value="abbastanza_leggero" />
+            <String fx:value="leggero" />
+            <String fx:value="molto_leggero" />
+        </FXCollections>
+    </items>
+      </ComboBox>
+      <ComboBox fx:id="prezzoCB" layoutX="436.0" layoutY="118.0" prefWidth="150.0" stylesheets="@FlatBee.css">
+           <items>
+        <FXCollections fx:factory="observableArrayList">
+            <String fx:value="molto_costoso" />
+            <String fx:value="costoso" />
+            <String fx:value="abbastanza_economico" />
+            <String fx:value="economico" />
+            <String fx:value="molto_economico" />
+        </FXCollections>
+    </items>
+      </ComboBox>
+      <ComboBox fx:id="specificheCB" layoutX="436.0" layoutY="171.0" prefWidth="150.0" stylesheets="@FlatBee.css">
+           <items>
+        <FXCollections fx:factory="observableArrayList">
+            <String fx:value="pessimo" />
+            <String fx:value="decente" />
+            <String fx:value="buono" />
+            <String fx:value="ottimo" />
+            <String fx:value="eccellente" />
+        </FXCollections>
+    </items>
+      </ComboBox>
+      <ComboBox fx:id="esteticaCB" layoutX="436.0" layoutY="225.0" prefWidth="150.0" stylesheets="@FlatBee.css"> <items>
+        <FXCollections fx:factory="observableArrayList">
+             <String fx:value="molto_brutto" />
+            <String fx:value="brutto" />
+            <String fx:value="abbastanza_bello" />
+            <String fx:value="bello" />
+            <String fx:value="molto_bello" />
+        </FXCollections>
+    </items>
+      </ComboBox>
+      <ComboBox fx:id="comfortCB" layoutX="436.0" layoutY="281.0" prefWidth="150.0" stylesheets="@FlatBee.css"> <items>
+        <FXCollections fx:factory="observableArrayList">
+           <String fx:value="pessimo" />
+            <String fx:value="decente" />
+            <String fx:value="buono" />
+            <String fx:value="ottimo" />
+            <String fx:value="eccellente" />
+        </FXCollections>
+    </items>
+      </ComboBox>
+      <Label fx:id="pesoLbl" layoutX="29.0" layoutY="80.0" text="Peso" textFill="#354ca6e1">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="139.0" text="Prezzo" textFill="#354ca6e1">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="192.0" text="Spec.Tecniche" textFill="#354ca6e1">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="246.0" text="Estetica" textFill="#354ca6e1">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="302.0" text="Comfort" textFill="#354ca6e0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="button" layoutX="436.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#clickedButton" prefHeight="41.0" prefWidth="150.0" text="Calcola" textAlignment="JUSTIFY" textFill="#354da6dc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Label fx:id="risultatoFinaleLbl" layoutX="29.0" layoutY="358.0" prefHeight="26.0" prefWidth="382.0" text="Risultato:" textFill="#354da6e4">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <HBox layoutX="14.0" layoutY="7.0" prefHeight="41.0" prefWidth="557.0">
+         <children>
+            <Label text="Valutazione PC" textFill="#354da6e7">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
